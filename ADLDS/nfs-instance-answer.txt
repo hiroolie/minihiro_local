@@ -1,0 +1,15 @@
+[ADAMInstall]
+; The following line specifies to install a unique ADAM instance.
+InstallType=Unique
+; The following line specifies the name to be assigned to the new instance.
+InstanceName=NFSInstance
+; The following line specifies the communications port to use for LDAP.
+LocalLDAPPortToListenOn=389
+; The following line specifies an application partition to create
+NewApplicationPartitionToCreate="cn=nfs,dc=nfs"
+; The following line specifies the directory to use for ADAM data files.
+;DataFilesPath=C:\Program Files\Microsoft ADAM\NFSInstance\data
+; The following line specifies the directory to use for ADAM log files.
+;LogFilesPath=C:\Program Files\Microsoft ADAM\NFSInstance\data
+; The following line specifies the .ldf files to import into the ADAM schema.
+ImportLDIFFiles="ms-inetorgperson.ldf" "ms-user.ldf" "MS-AdamSchemaW2K8.ldf"

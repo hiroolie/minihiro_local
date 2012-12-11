@@ -1,0 +1,5 @@
+dn: CN=Directory Service,CN=Windows NT,CN=Services,CN=Configuration,DC=X
+changetype: modify
+replace: dsHeuristics
+dsHeuristics: 0000002001001
+-

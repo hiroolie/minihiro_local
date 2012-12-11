@@ -1,0 +1,1 @@
+Nfs-adlds-config.js /passwd:passwd /group:group /ldf:users.ldf /usercmd:create-local-users-groups.cmd /log:configure-adlds.txt

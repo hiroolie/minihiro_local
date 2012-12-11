@@ -1,0 +1,85 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Windows の堅牢性の高いファイル コピー                              
+-------------------------------------------------------------------------------
+
+  開始: Tue Dec 11 03:00:06 2012
+
+   コピー元 = Z:\dbdata\
+     コピー先 : D:\Users\hiRo\Documents\My Dropbox\Backup\bkupdir\dbdata\
+
+    ファイル: *.*
+	    
+  オプション: *.* /S /E /COPY:DAT /PURGE /MIR /NP /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	Z:\dbdata\
+	                   0	Z:\dbdata\dbmg10\
+	                   0	Z:\dbdata\dbmg20\
+	                   0	Z:\dbdata\ndbd10\
+	*EXTRA Dir        -1	D:\Users\hiRo\Documents\My Dropbox\Backup\bkupdir\dbdata\ndbd10\BACKUP-62\
+	  *EXTRA File 		  485840	BACKUP-62.11.ctl
+	  *EXTRA File 		      52	BACKUP-62.11.log
+	  *EXTRA File 		   5.2 m	BACKUP-62-0.11.Data
+	                   3	Z:\dbdata\ndbd10\BACKUP-63\
+	                   3	Z:\dbdata\ndbd10\BACKUP-64\
+	                   3	Z:\dbdata\ndbd10\BACKUP-65\
+	                   3	Z:\dbdata\ndbd10\BACKUP-66\
+	  新しいディレクトリ          3	Z:\dbdata\ndbd10\BACKUP-67\
+	    新しいファイル  		  485840	BACKUP-67.11.ctl
+	    新しいファイル  		      52	BACKUP-67.11.log
+	    新しいファイル  		   5.2 m	BACKUP-67-0.11.Data
+	                   0	Z:\dbdata\ndbd20\
+	*EXTRA Dir        -1	D:\Users\hiRo\Documents\My Dropbox\Backup\bkupdir\dbdata\ndbd20\BACKUP-62\
+	  *EXTRA File 		  485840	BACKUP-62.12.ctl
+	  *EXTRA File 		      52	BACKUP-62.12.log
+	  *EXTRA File 		   5.8 m	BACKUP-62-0.12.Data
+	                   3	Z:\dbdata\ndbd20\BACKUP-63\
+	                   3	Z:\dbdata\ndbd20\BACKUP-64\
+	                   3	Z:\dbdata\ndbd20\BACKUP-65\
+	                   3	Z:\dbdata\ndbd20\BACKUP-66\
+	  新しいディレクトリ          3	Z:\dbdata\ndbd20\BACKUP-67\
+	    新しいファイル  		  485840	BACKUP-67.12.ctl
+	    新しいファイル  		      52	BACKUP-67.12.log
+	    新しいファイル  		   5.8 m	BACKUP-67-0.12.Data
+	                   0	Z:\dbdata\ndbd30\
+	*EXTRA Dir        -1	D:\Users\hiRo\Documents\My Dropbox\Backup\bkupdir\dbdata\ndbd30\BACKUP-62\
+	  *EXTRA File 		  485840	BACKUP-62.13.ctl
+	  *EXTRA File 		      52	BACKUP-62.13.log
+	  *EXTRA File 		   5.1 m	BACKUP-62-0.13.Data
+	                   3	Z:\dbdata\ndbd30\BACKUP-63\
+	                   3	Z:\dbdata\ndbd30\BACKUP-64\
+	                   3	Z:\dbdata\ndbd30\BACKUP-65\
+	                   3	Z:\dbdata\ndbd30\BACKUP-66\
+	  新しいディレクトリ          3	Z:\dbdata\ndbd30\BACKUP-67\
+	    新しいファイル  		  485840	BACKUP-67.13.ctl
+	    新しいファイル  		      52	BACKUP-67.13.log
+	    新しいファイル  		   5.2 m	BACKUP-67-0.13.Data
+	                   0	Z:\dbdata\ndbd40\
+	*EXTRA Dir        -1	D:\Users\hiRo\Documents\My Dropbox\Backup\bkupdir\dbdata\ndbd40\BACKUP-62\
+	  *EXTRA File 		  485840	BACKUP-62.14.ctl
+	  *EXTRA File 		      52	BACKUP-62.14.log
+	  *EXTRA File 		   5.5 m	BACKUP-62-0.14.Data
+	                   3	Z:\dbdata\ndbd40\BACKUP-63\
+	                   3	Z:\dbdata\ndbd40\BACKUP-64\
+	                   3	Z:\dbdata\ndbd40\BACKUP-65\
+	                   3	Z:\dbdata\ndbd40\BACKUP-66\
+	  新しいディレクトリ          3	Z:\dbdata\ndbd40\BACKUP-67\
+	    新しいファイル  		  485840	BACKUP-67.14.ctl
+	    新しいファイル  		      52	BACKUP-67.14.log
+	    新しいファイル  		   5.5 m	BACKUP-67-0.14.Data
+
+------------------------------------------------------------------------------
+
+                  合計     コピー済み      スキップ       不一致        失敗    Extras
+   ディレクトリ:        27         4        23         0         0         4
+     ファイル:        60        12        48         0         0        12
+      バイト:  118.89 m   23.78 m   95.11 m         0         0   23.69 m
+       時刻:   0:00:13   0:00:04                       0:00:00   0:00:08
+
+
+       速度:             5462631 バイト/秒
+       速度:             312.574 MB/分
+
+       終了: Tue Dec 11 03:00:20 2012

@@ -1,0 +1,4 @@
+wordpress_dev02
+wordpress_dev03
+wordpress_npf
+wordpress_shimashima

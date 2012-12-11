@@ -1,0 +1,15 @@
+dn: CN=hiro,CN=Users,CN=nfs,DC=nfs
+changetype: add
+cn: hiro
+objectClass: user
+uidNumber: 0
+gidNumber: 0
+sAMAccountName: hiro
+
+dn: CN=administrators,CN=Users,CN=nfs,DC=nfs
+changetype: add
+cn: administrators
+objectClass: group
+gidNumber: 0
+sAMAccountName: administrators
+
