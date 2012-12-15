@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=SHIFT_JIS"> 
+    <title>DeviceLog</title> 
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+  </head> 
+  <body> 
+    <div class="container"> 
+      <div id="page-container"> 
+        <div class="content"> 
+          <pre class="brush: bash; gutter: true; first-line: 1"> 
+Controllers found: 1
+----------------------------------------------------------------------
+Controller information
+----------------------------------------------------------------------
+   Controller Status                        : Optimal
+   Channel description                      : SAS/SATA
+   Controller Model                         : Adaptec 6805E
+   Controller Serial Number                 : 1A3311B7BC8
+   Physical Slot                            : 16
+   Temperature                              : 78 C/ 172 F (Normal)
+   Installed memory                         : 128 MB
+   Copyback                                 : Disabled
+   Background consistency check             : Enabled
+   Automatic Failover                       : Enabled
+   Global task priority                     : High
+   Performance Mode                         : Default/Dynamic
+   Stayawake period                         : Disabled
+   Spinup limit internal drives             : 0
+   Spinup limit external drives             : 0
+   Defunct disk drive count                 : 0
+   Logical devices/Failed/Degraded          : 2/0/0
+   NCQ status                               : Enabled
+   Statistics data collection mode          : Enabled
+   --------------------------------------------------------
+   Controller Version Information
+   --------------------------------------------------------
+   BIOS                                     : 5.2-0 (19076)
+   Firmware                                 : 5.2-0 (19076)
+   Driver                                   : 1.1-7 (29100)
+   Boot Flash                               : 5.2-0 (19076)
+
+----------------------------------------------------------------------
+Logical device information
+----------------------------------------------------------------------
+Logical device number 0
+   Logical device name                      : hiRo00
+   RAID level                               : 0
+   Status of logical device                 : Optimal
+   Size                                     : 2856950 MB
+   Stripe-unit size                         : 256 KB
+   Read-cache mode                          : Enabled
+   Write-cache mode                         : Enabled (write-back)
+   Write-cache setting                      : Enabled (write-back)
+   Partitioned                              : Yes
+   Protected by Hot-Spare                   : No
+   Bootable                                 : Yes
+   Failed stripes                           : No
+   Power settings                           : Enabled
+   Slow down after(Minutes)                 : never
+   Power off after(Minutes)                 : never
+   Verify after(Hours)                      : 24h
+   Power State                              : Active
+   --------------------------------------------------------
+   Logical device segment information
+   --------------------------------------------------------
+   Segment 0                                : Present (Controller:1,Connector:0,Device:0)       JP1572JE025YBK
+   Segment 1                                : Present (Controller:1,Connector:0,Device:1)             Z2AV2KG0
+   Segment 2                                : Present (Controller:1,Connector:0,Device:2)       JP1522JE2JE8DH
+   Segment 3                                : Present (Controller:1,Connector:1,Device:0)       MSK4235H32HB0H
+   Segment 4                                : Present (Controller:1,Connector:1,Device:1)             Z2AV2LBP
+   Segment 5                                : Present (Controller:1,Connector:1,Device:2)       JP1572JE094T4K
+
+Logical device number 1
+   Logical device name                      : hiRo11
+   RAID level                               : 1
+   Status of logical device                 : Optimal
+   Size                                     : 714742 MB
+   Read-cache mode                          : Enabled
+   Write-cache mode                         : Enabled (write-back)
+   Write-cache setting                      : Enabled (write-back)
+   Partitioned                              : Yes
+   Protected by Hot-Spare                   : No
+   Bootable                                 : No
+   Failed stripes                           : No
+   Power settings                           : Enabled
+   Slow down after(Minutes)                 : 10m
+   Power off after(Minutes)                 : 1h
+   Verify after(Hours)                      : 24h
+   Power State                              : Active
+   --------------------------------------------------------
+   Logical device segment information
+   --------------------------------------------------------
+   Segment 0                                : Present (Controller:1,Connector:1,Device:3)       GTF202P8H6A9TF
+   Segment 1                                : Present (Controller:1,Connector:0,Device:3)       GTF202P8H6AUWF
+
+
+----------------------------------------------------------------------
+Physical Device information
+----------------------------------------------------------------------
+      Device #0
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 6.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,0(0:0)
+         Reported Location                  : Connector 0, Device 0
+         Vendor                             : Hitachi
+         Model                              : HDS721050CLA662
+         Firmware                           : JP2OA50E
+         Serial number                      : JP1572JE025YBK
+         Size                               : 476940 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off,Reduced rpm
+         NCQ status                         : Enabled
+      Device #1
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 6.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,1(1:0)
+         Reported Location                  : Connector 0, Device 1
+         Vendor                             : 
+         Model                              : ST500DM002-1BD14
+         Firmware                           : KC45
+         Serial number                      : Z2AV2KG0
+         Size                               : 476940 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off
+         NCQ status                         : Enabled
+      Device #2
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 6.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,2(2:0)
+         Reported Location                  : Connector 0, Device 2
+         Vendor                             : Hitachi
+         Model                              : HDS721050CLA662
+         Firmware                           : JP2OA50E
+         Serial number                      : JP1522JE2JE8DH
+         Size                               : 476940 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off,Reduced rpm
+         NCQ status                         : Enabled
+      Device #3
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 3.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,3(3:0)
+         Reported Location                  : Connector 0, Device 3
+         Vendor                             : Hitachi
+         Model                              : HDS721075KLA330
+         Firmware                           : GK8OAB0A
+         Serial number                      : GTF202P8H6AUWF
+         Size                               : 715404 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off,Reduced rpm
+         NCQ status                         : Enabled
+      Device #4
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 6.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,4(4:0)
+         Reported Location                  : Connector 1, Device 0
+         Vendor                             : Hitachi
+         Model                              : HDS721050DLE630
+         Firmware                           : MS1OA610
+         Serial number                      : MSK4235H32HB0H
+         Size                               : 476940 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off,Reduced rpm
+         NCQ status                         : Enabled
+      Device #5
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 6.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,5(5:0)
+         Reported Location                  : Connector 1, Device 1
+         Vendor                             : 
+         Model                              : ST500DM002-1BD14
+         Firmware                           : KC45
+         Serial number                      : Z2AV2LBP
+         Size                               : 476940 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off
+         NCQ status                         : Enabled
+      Device #6
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 6.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,6(6:0)
+         Reported Location                  : Connector 1, Device 2
+         Vendor                             : Hitachi
+         Model                              : HDS721050CLA662
+         Firmware                           : JP2OA50E
+         Serial number                      : JP1572JE094T4K
+         Size                               : 476940 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off,Reduced rpm
+         NCQ status                         : Enabled
+      Device #7
+         Device is a Hard drive
+         State                              : Online
+         Supported                          : Yes
+         Transfer Speed                     : SATA 3.0 Gb/s
+         Reported Channel,Device(T:L)       : 0,7(7:0)
+         Reported Location                  : Connector 1, Device 3
+         Vendor                             : Hitachi
+         Model                              : HDS721075KLA330
+         Firmware                           : GK8OAB0A
+         Serial number                      : GTF202P8H6A9TF
+         Size                               : 715404 MB
+         Write Cache                        : Enabled (write-back)
+         FRU                                : None
+         S.M.A.R.T.                         : No
+         S.M.A.R.T. warnings                : 0
+         Power State                        : Full rpm
+         Supported Power States             : Full rpm,Powered off,Reduced rpm
+         NCQ status                         : Enabled
+
+
+Command completed successfully.
+            </div> 
+         </div> 
+      </div> 
+   </body> 
+</html> 

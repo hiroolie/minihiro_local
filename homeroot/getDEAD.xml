@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="SHIFT_JIS"?>
+<?xml-stylesheet alternate="yes" title="compact" href="getDEVICE_style.xsl" type="application/xml"?>
+<?xml-stylesheet alternate="yes" title="compact" href="style.css" type="text/css"?>
+<!-- getlogs DEVICE 要素情報 -->
+<!DOCTYPE ControllerLog[
+<!ELEMENT ControllerLog (deadDriveEntry)>
+<!ELEMENT deadDriveEntry (#PCDATA)>
+
+<!-- 外部実体宣言 -->
+<!ENTITY getlogsDEAD SYSTEM "getlogs_DEAD.xml">
+]>
+
+<DeviceLog>
+  &getlogsDEAD;
+</DeviceLog>

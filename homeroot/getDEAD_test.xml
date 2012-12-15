@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="SHIFT_JIS"?>
+<html>
+   <body>
+      <p>
+         <b>controllerID : 0</b>
+      </p>
+      <p>
+         <b>type : 5</b>
+      </p>
+      <p>
+         <b>time : 2012/12/15 08:45:08</b>
+      </p>
+      <p>
+         <b>version : 1</b>
+      </p>
+      <p>
+         <b>tableFull : </b>
+      </p>
+      <p>-------------------------------</p>
+      <h1>DeviceLog</h1>
+      <h2>controllerID : 0</h2>
+  
+      <table border="1">
+         <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>vendorID</th>
+            <th>serialNumber</th>
+            <th>productID</th>
+            <th>wwn</th>
+            <th>failureReasonCode</th>
+         </tr>
+         <tr>
+            <td nowrap="nowrap">2012/8/24</td>
+            <td nowrap="nowrap">13:6:52</td>
+            <td nowrap="nowrap">XXX</td>
+            <td nowrap="nowrap">XXX</td>
+            <td nowrap="nowrap">XXX</td>
+            <td nowrap="nowrap">XXX</td>
+            <td nowrap="nowrap">2</td>
+         </tr>
+      </table>
+      <br/>
+      <p>PublisedTime</p>2012-12-15T19:39:25.24+09:00<br/>
+      <h3>Here is a table of what the 'failureReasonCode' parameter means:</h3>
+      <br>0 or 0x00 Unknown failure</br>
+      <br>1 or 0x01 Device not ready</br>
+      <br>2 or 0x02 Selection timout</br>
+      <br>3 or 0x03 User marked the drive dead</br>
+      <br>4 or 0x04 Hardware error</br>
+      <br>5 or 0x05 Bad block</br>
+      <br>6 or 0x06 Retries failed</br>
+      <br>7 or 0x07 No Response from drive during discovery</br>
+      <br>8 or 0x08 Inquiry failed</br>
+      <br>9 or 0x09 Probe(Test Unit Ready/Start Stop Unit) failed</br>
+      <br>A or 0x0A Bus discovery failed </br>
+   </body>
+</html>
