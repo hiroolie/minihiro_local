@@ -3,7 +3,7 @@
 set MYSQLDUMP="C:\Program Files\MySQL\MySQL Server 5.5\bin\mysqldump.exe"
 set WINRAR="C:\Program Files (x86)\WinRAR\WinRAR.exe"
 set BACKUPDIR="D:\Users\hiRo\Documents\My Dropbox\Backup\wordpress\"
-set CONFIGFILE="E:\Develop\Scripts\mysql_databases.txt"
+set CONFIGFILE="E:\Develop\Scripts\conf\mysql_databases.txt"
 
 rem MySQLデータベースのバックアップと圧縮(前回ファイル上書き)を行う
 rem バックアップ対象設定ファイルを1行ずつ読み込む

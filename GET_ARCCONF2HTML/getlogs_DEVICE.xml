@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="Shift_JIS" ?> 
-<ControllerLog controllerID="0" type="0" time="1355575151" version="3" tableFull="false">
-    <driveErrorEntry smartError="false" vendorID="Hitachi " serialNumber="JP1522JE2KNZNH" wwn="0000000000000000" deviceID="4" productID="HDS72105" numParityErrors="0" linkFailures="21" hwErrors="0" abortedCmds="1338" mediumErrors="500" smartWarning="0" />
-</ControllerLog>
