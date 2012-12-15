@@ -1,5 +1,5 @@
 Controllers found: 1
-<ControllerLog controllerID="0" type="6" time="1355215505">
+<ControllerLog controllerID="0" type="6" time="1355561109">
     <eventlog>
     	<event Date="1349454357" eventType="FSA_EM_CONTAINER_CHANGE" eventCode="0x20" controllerID="0" logicalDriveID="1"/>
     	<event Date="1349454358" eventType="FSA_EM_CONTAINER_CHANGE" eventCode="0x20" controllerID="0" logicalDriveID="1"/>

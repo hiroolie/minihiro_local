@@ -16,9 +16,9 @@ unless( $repoList ){
 
 # 変数を定義する。
 my $backups_dir = "D:/Users/hiRo/Documents/My Dropbox/Backup/repository";  # バックアップ先ディレクトリ
-my $repository_dir = "E:/Deployment/Repositories";                         # リポジトリの場所
-my $svn_bin = '"E:/Deployment/VisualSVN Server/bin"';                      # svnコマンドの場所
-my $svnadmin_cmd = "E:/Deployment/VisualSVN Server/bin/svnadmin.exe";      # 空白の関係で面倒だが別変数に格納しておく
+my $repository_dir = "E:/Repositories";                         # リポジトリの場所
+my $svn_bin =      "D:/ProgramFilesD/VisualSVN Server/bin";                      # svnコマンドの場所
+my $svnadmin_cmd = "D:/ProgramFilesD/VisualSVN Server/bin/svnadmin.exe";      # 空白の関係で面倒だが別変数に格納しておく
 
 # 曜日によって実行する処理を振り分ける。
 my ($sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst) = localtime();
