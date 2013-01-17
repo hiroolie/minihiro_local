@@ -1,40 +1,40 @@
 Sub makeAutoinst()
-    Dim xmlDoc As DOMDocument 'xmlƒf[ƒ^—p•Ï”
-    Dim FileValue As Boolean '“Ç‚İ‚İó‘Ô—p
+    Dim xmlDoc As DOMDocument 'xmlï¿½fï¿½[ï¿½^ï¿½pï¿½Ïï¿½
+    Dim FileValue As Boolean 'ï¿½Ç‚İï¿½ï¿½İï¿½ï¿½Ô—p
     Dim SelNode As IXMLDOMNodeList
     Dim node As IXMLDOMNode
     Dim XmlPath As String
     Dim OutName As String
-    Dim w As Long, h As Long 'ƒJƒEƒ“ƒg•Ï”
-    Dim SetVal As Variant, NodeVal As Variant 'ƒZƒ‹•¶š—ñ“Ç‚İ‚İ—p•Ï”
+    Dim w As Long, h As Long 'ï¿½Jï¿½Eï¿½ï¿½ï¿½gï¿½Ïï¿½
+    Dim SetVal As Variant, NodeVal As Variant 'ï¿½Zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç‚İï¿½ï¿½İ—pï¿½Ïï¿½
     Dim OrgXML As String
     
-    OrgXML = Cells(1, 2) 'Œ³XMLƒtƒ@ƒCƒ‹–¼‚ğæ“¾
+    OrgXML = Cells(1, 2) 'ï¿½ï¿½XMLï¿½tï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ“¾
     
-    XmlPath = ThisWorkbook.Path & "\" & OrgXML 'ƒZƒ‹B2‚Åw’è‚µ‚½xml‚ğ“Ç‚İ‚İ‚Ü‚·
+    XmlPath = ThisWorkbook.Path & "\" & OrgXML 'ï¿½Zï¿½ï¿½B2ï¿½Åwï¿½è‚µï¿½ï¿½xmlï¿½ï¿½ï¿½Ç‚İï¿½ï¿½İ‚Ü‚ï¿½
         
     Set xmlDoc = New DOMDocument
    
     xmlDoc.async = False
 
         For h = 4 To Cells(Rows.Count, 2).End(xlUp).Row
-            OutName = Cells(h, 3) 'o—Íƒtƒ@ƒCƒ‹–¼‚ğæ“¾
+            OutName = Cells(h, 3) 'ï¿½oï¿½Ì“tï¿½@ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ“¾
             
-            'XML‚Æ‚µ‚Äˆµ‚¦‚È‚­‚È‚é•¶š—ñ‚ğíœ
+            'XMLï¿½Æ‚ï¿½ï¿½Äˆï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½È‚é•¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½íœ
             Call ReplaceFromFile(XmlPath, ThisWorkbook.Path & "\tmp_" & OutName & ".xml", "<!DOCTYPE profile>")
                 
             If xmlDoc.Load(ThisWorkbook.Path & "\tmp_" & OutName & ".xml") Then
     
                 For w = 4 To Cells(4, Columns.Count).End(xlToLeft).Column
-                    NodeVal = Cells(3, w) 'XML‚Ìƒm[ƒh‚ğw’è‚·‚é•¶š—ñ
-                    SetVal = Cells(h, w) 'NodeVal‚É‘ã“ü‚·‚é’l
+                    NodeVal = Cells(3, w) 'XMLï¿½Ìƒmï¿½[ï¿½hï¿½ï¿½ï¿½wï¿½è‚·ï¿½é•¶ï¿½ï¿½ï¿½ï¿½
+                    SetVal = Cells(h, w) 'NodeValï¿½É‘ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½l
         
                     If SetVal <> True Then
-                        Set SelNode = xmlDoc.SelectNodes(NodeVal) 'ŠY“–‚·‚éƒm[ƒh‚ğ”z—ñ‚ÉŠi”[‚·‚é
+                        Set SelNode = xmlDoc.SelectNodes(NodeVal) 'ï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½mï¿½[ï¿½hï¿½ï¿½ï¿½zï¿½ï¿½ï¿½ÉŠiï¿½[ï¿½ï¿½ï¿½ï¿½
                         
-                        '‘ÎÛƒ^ƒO“Ç
-                        If SelNode.Length < 1 Then  '—L–³”»’f
-                            '–³‚¢¨ƒ^ƒOì¬
+                        'ï¿½ÎÛƒ^ï¿½Oï¿½Çï¿½
+                        If SelNode.Length < 1 Then  'ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½f
+                            'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½^ï¿½Oï¿½ì¬
                             Dim SelNode1 As IXMLDOMElement '
                             Dim NodeBefore As Variant
         
@@ -46,19 +46,19 @@ Sub makeAutoinst()
                         'MsgBox SelNode.Length
                         'MsgBox SelNode(0).Text
                         
-                        '‘¶İ¨ƒf[ƒ^İ’è
-                        SelNode(0).Text = SetVal '”z—ñˆê‚Â–Ú‚ÉSetval‚ğ“ü‚ê‚é
+                        'ï¿½ï¿½ï¿½İï¿½ï¿½fï¿½[ï¿½^ï¿½İ’ï¿½
+                        SelNode(0).Text = SetVal 'ï¿½zï¿½ï¿½ï¿½ï¿½ï¿½Â–Ú‚ï¿½Setvalï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                     
-                End If
+                    End If
     
-            Next w
+                Next w
             
-            xmlDoc.Save (ThisWorkbook.Path & "\" & OutName & ".xml") '‚»‚µ‚Ä•Û‘¶
-            Kill (ThisWorkbook.Path & "\tmp_" & OutName & ".xml")
-            
-        End If
+                xmlDoc.Save (ThisWorkbook.Path & "\" & OutName & ".xml") 'ï¿½ï¿½ï¿½ï¿½ï¿½Ä•Û‘ï¿½
+                Kill (ThisWorkbook.Path & "\tmp_" & OutName & ".xml")
+                
+            End If
         
-    Next h
+     Next h
 
 End Sub
 Sub IP_DEC2HEX()
